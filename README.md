@@ -19,4 +19,4 @@ Example details:
 - if you will need auth, you will not be able to use middleware for that - middleware is retarted comparing to other parts of next.js
 - Bonus: Some Mantine + Tailwind CSS
 
-You can do netter than that? Please create PR, let's make it easier for people.
+You can do better than that? Great! Please create PR, let's make it easier for people.
