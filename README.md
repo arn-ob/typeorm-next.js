@@ -14,7 +14,8 @@ Steps:
 
 Example details:
 - both client rendering and serverside rendering on same page
-- in `dataSource.ts` you need to manually specify every `Entity` and `Migration` manually - this is sad, but all other attempts failed 
+- relations between tables work
+- in `dataSource.ts` you need to manually specify every `Entity` and `Migration` - this is sad, but all other attempts failed 
 - for simplicity no auth in example
 - if you will need auth, you will not be able to use middleware for that - middleware is retarted comparing to other parts of next.js
 - Bonus: Some Mantine + Tailwind CSS
