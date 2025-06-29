@@ -13,7 +13,7 @@ Steps:
 
 
 Example details:
-- both client rendering and serverside rendering on same page
+- both client rendering and serverside rendering examples on same page
 - relations between tables work
 - in `dataSource.ts` you need to manually specify every `Entity` and `Migration` - this is sad, but all other attempts failed 
 - for simplicity no auth in example
