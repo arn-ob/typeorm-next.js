@@ -1,0 +1,55 @@
+{
+  "name": "typeorm-next-example",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npm run migration:run && next start",
+    "lint": "next lint",
+    "typeorm": "ts-node -P ./app/db/tsconfig.json ./node_modules/typeorm/cli.js",
+    "migration:create": "npm run typeorm migration:create ./app/db/migrations/ManualMigration",
+    "migration:generate": "npm run typeorm migration:generate ./app/db/migrations/AutoMigration -- -d app/db/dataSource.ts",
+    "migration:run": "npm run typeorm migration:run -- -d app/db/dataSource.ts",
+    "migration:revert": "npm run typeorm migration:revert -- -d app/db/dataSource.ts",
+    "format": "prettier \"**/*.{ts,cjs,js,jsx,tsx}\" --check --ignore-unknown",
+    "format:write": "prettier \"**/*.{ts,cjs,js,jsx,tsx}\" --write --ignore-unknown",
+    "compile": "tsc",
+    "knip": "knip",
+    "knip:fix": "knip --fix"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.17.5",
+    "@next/env": "^15.2.2",
+    "@tailwindcss/postcss": "^4.1.8",
+    "isomorphic-dompurify": "^2.22.0",
+    "next": "15.2.4",
+    "pg": "^8.14.0",
+    "postcss": "^8.5.3",
+    "postcss-load-config": "^6.0.1",
+    "postcss-preset-mantine": "^1.17.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "reflect-metadata": "^0.2.2",
+    "swr": "^2.3.3",
+    "tailwindcss": "^4.1.5",
+    "ts-node": "^10.9.2",
+    "typeorm": "^0.3.21",
+    "typeorm-naming-strategies": "^4.1.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.46"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "knip": "^5.56.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3"
+  },
+  "lint-staged": {
+    "**/*.{ts,cjs,js,jsx}": "prettier --write --ignore-unknown"
+  }
+}

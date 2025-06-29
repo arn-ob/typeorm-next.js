@@ -1,0 +1,7 @@
+.github
+.run
+build
+dist
+out
+coverage
+node_modules

@@ -1,0 +1,8 @@
+.input {
+    background-color: var(--color-blue-foreground);
+    border-color: #CED4DA;
+    border-radius: 2px;
+    height: 30px;
+    min-height: 30px;
+    line-height: 30px;
+}

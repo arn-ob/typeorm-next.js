@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-blue-background: #202E43;
+  --color-blue-foreground: #0C162F;
+  --color-blue-highlight: #3B91E5;
+  --color-grey: #868E96;
+
+}
+
+:root {
+  --foreground: white;
+  --mantine-color-body: #202E43 !important;
+  --mantine-color-text: #ffffff !important;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
