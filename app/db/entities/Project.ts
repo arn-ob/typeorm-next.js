@@ -5,6 +5,6 @@ export class Project {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column({ unique: true, nullable: false })
+    @Column({ unique: false, nullable: false })
     name: string;
 }
